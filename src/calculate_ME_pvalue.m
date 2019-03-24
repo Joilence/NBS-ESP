@@ -10,6 +10,7 @@ addpath('util')
 addpath('NBS')
 addpath('Hotnet')
 addpath('steiner_tree_util')
+addpath('read_data')
 dataset = 'TCGA';
 % query_cancer_type = 'batch';
 
