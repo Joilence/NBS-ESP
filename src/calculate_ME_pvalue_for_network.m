@@ -10,13 +10,14 @@ addpath('util')
 addpath('NBS')
 addpath('Hotnet')
 addpath('steiner_tree_util')
+addpath('read_data')
 warning off
 network_file = '../data/network/InBio-Map_Entrez.sif';
 % network_file = '..\data\network\FI_id.txt';
 gene_name_mapping_file = '../data/util/gene_name_mapping.txt';
 result_dir = '../output/subtype/';
 dataset = 'TCGA';
-survival_dir = '../data/survival/raw_survival/';
+survival_dir = '../data/TCGA_survival/';
 filter_no_survival_pat = true;
 min_mutation = 10;
 max_nclst = 6;
@@ -29,6 +30,8 @@ dist_type=1;
 dim = 10:10:50;
 nperm = 10;
 diff_mat_type = 3;
+
+cancer_type = 'COAD'
 
 mutation_file = [survival_dir,cancer_type,'_mut.txt'];
 survival_file = [survival_dir,cancer_type,'_surv.txt_clean']; %% remove patient with NA survival
