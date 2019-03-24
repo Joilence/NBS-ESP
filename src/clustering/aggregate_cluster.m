@@ -1,4 +1,5 @@
 function [indClust,p2p] = aggregate_cluster( cluster_matrix )
+disp('Running: aggregate_cluster()')
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 

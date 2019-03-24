@@ -1,4 +1,5 @@
 function [ all_pv_net,pat_diff] = MBS_read_ME_network( cancer_type,  rst, p2m, i2hgnc, topk, ME_hop_l)
+disp('Running: MBS_read_ME_network()')
 %READ_ME_NETWORK Summary of this function goes here
 %   Detailed explanation goes here
 [npat,ngene] = size(p2m);

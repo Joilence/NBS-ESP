@@ -1,4 +1,5 @@
 function [ res_pv,min_nclst,max_nclst] = get_survival_pvalue( pat_survival,file_name,sur_type,indClust,pat_map_rev,nclst,write_to_file)
+disp('Running: get_survival_pvalue()')
 %GET_SURVIVAL_PVALUE Summary of this function goes here
 %   Detailed explanation goes here
 if sur_type==1

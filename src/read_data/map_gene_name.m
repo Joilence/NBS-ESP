@@ -1,4 +1,5 @@
 function [ g2hgnc,i2hgnc,hgnc2i,hgnc2g] = map_gene_name(g2i,i2g,gene_name_mapping_file)
+disp('Running: map_gene_name()')
 %MAP_GENE_NAME Summary of this function goes here
 %   Detailed explanation goes here
 [entrez,hgnc] = textread(gene_name_mapping_file,'%s%s','headerlines',1);

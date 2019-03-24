@@ -9,6 +9,7 @@
 %    state of the i-th node.
 %
 function [Q] = run_diffusion(A, rst_p, reset,converge_rate)
+disp('Running: run_diffusion()')
 n = size(A, 1);
 
 renorm = @(M) bsxfun(@rdivide, M, sum(M));

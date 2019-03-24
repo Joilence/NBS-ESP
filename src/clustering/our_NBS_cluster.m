@@ -1,5 +1,6 @@
 function [clust_pv,indClust_all,chisq,cluster_max,cluster_min] = our_NBS_cluster(pat_mute,integrate_mat,pat_survival,rst_prob,selected_pat,i2p,degree,cancer_type,max_nclst,min_nclst,...
     low_d_type_l,input_mat_type_l,clst_type_l,dist_type_l,dim_l,method_name)
+disp('Running: our_NBS_cluster()')
 addpath 'evaluating_survival'
 nmf_options.iter = 100;
 nmf_options.gamma = 200;

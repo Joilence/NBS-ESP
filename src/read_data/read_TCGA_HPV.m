@@ -1,4 +1,5 @@
 function [ hpv_status ] = read_TCGA_HPV( file,p2i,indClust)
+disp('Running: read_TCGA_HPV()')
 %READ_TCGA_HPV Summary of this function goes here
 %   Detailed explanation goes here
 [pat,hpv] = textread(file,'%s%d');

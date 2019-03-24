@@ -1,4 +1,5 @@
 function output_cluster_info(indClust,nclst,pat_map_rev,pat_survival,sur_type,method_prefix)
+disp('Running: output_cluster_info()')
 valid_cluster = 0;
 for i=1:nclst
     if length(find(indClust==i))>0

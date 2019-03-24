@@ -1,5 +1,6 @@
 function [pat_mute_mat,pat_survival,network,pat_map_rev,gene_map_rev,pat_map,gene_map] = ...
     MBS_read_data(mutation_file,network_file,survival_file,min_mutation,weighted,filter_no_survival_pat,read_CNA)
+disp('Running: MBS_read_data()')
 %READ_DATA Summary of this function goes here
 %   Detailed explanation goes here
 
