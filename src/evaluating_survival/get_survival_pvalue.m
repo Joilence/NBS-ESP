@@ -80,7 +80,16 @@ end
 
 % system() should return status code 0 when there's no error
 if x ~= 0
-    error('r script error: %s',y);    
+    % Add absolute path to Rscript as solution for not having Rscript in PATH
+    % NOTICE: Only works on xianke's machine
+    [x, y] =system(['C:\"Program Files"\R\R-3.5.0\bin\Rscript --vanilla evaluating_survival/NBS_survival_prediction.R ', ...
+        cls_index_file,' ',method_prefix,' 1',' ',num2str(ts_l(1)),' ',...
+        num2str(ts_l(2)),' ',num2str(ts_l(3)),' ',num2str(ts_l(4)),' ',num2str(nclst)-length(remove_c)]);
+    if x ~= 0
+        error('r script error: %s',y);
+    else
+        res_pv = dlmread(method_prefix);
+    end
 else
     res_pv = dlmread(method_prefix);
 end
