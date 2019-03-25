@@ -25,6 +25,12 @@ for g= seed_gene_set
         if sum(px)==0 || sum(gx)==0
             continue
         end
+        if ismember(2, gx)
+            error('gx has 2.')
+        end
+        if ismember(2, px)
+            error('px has 2.')
+        end
         ct = crosstab(px,gx);
         if min(size(ct))<2
             continue;
