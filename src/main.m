@@ -4,7 +4,7 @@ addpath 'read_data'
 network_file = '../data/network/InBio-Map_Entrez.sif';
 gene_name_mapping_file = '../data/util/gene_name_mapping.txt';
 result_dir = '../output/subtype/';
-cancer_type = 'OV';
+cancer_type = 'COADmsi';
 survival_dir = '../data/TCGA_survival/';
 mutation_file = [survival_dir,cancer_type,'_mut.txt'];
 survival_file = [survival_dir,cancer_type,'_surv.txt_clean']; %% remove patient with NA survival

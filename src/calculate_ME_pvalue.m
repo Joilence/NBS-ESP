@@ -52,7 +52,7 @@ clst_type=2;
 dist_type=1;
 dim = 10:10:50;
 query_cancer_type = 'COADmsi';
-nhop = 1;
+nhop = 3;
 files = dir([survival_dir '*.txt_clean'])';
 
 for fi = 1:length(files)
