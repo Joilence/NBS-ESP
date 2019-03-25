@@ -45,7 +45,7 @@ for g= seed_gene_set
         odds_mat(ng,g) = left_stats.OddsRatio;
     end
 end
-
+fprintf('fast_local_ME_test(): finish after %d rounds\n', tct)
 
 end
 

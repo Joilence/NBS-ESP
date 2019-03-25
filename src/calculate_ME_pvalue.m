@@ -51,7 +51,7 @@ input_mat_type=4;
 clst_type=2;
 dist_type=1;
 dim = 10:10:50;
-query_cancer_type = 'COAD';
+query_cancer_type = 'COADmsi';
 nhop = 1;
 files = dir([survival_dir '*.txt_clean'])';
 
